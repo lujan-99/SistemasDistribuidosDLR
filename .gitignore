@@ -1,0 +1,16 @@
+# Ignorar carpetas de compilación de Maven
+target/
+
+# Ignorar archivos compilados individuales
+*.class
+
+# Ignorar archivos empaquetados (los que te dijeron que NO envíes)
+*.jar
+*.war
+*.ear
+
+# Ignorar carpetas de configuración de IDEs (IntelliJ, NetBeans, VS Code)
+.idea/
+nbproject/
+nb-configuration.xml
+.vscode/
