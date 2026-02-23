@@ -1,16 +1,50 @@
-# Ignorar carpetas de compilación de Maven
-target/
-
-# Ignorar archivos compilados individuales
+# --- Java (Compilados) ---
 *.class
-
-# Ignorar archivos empaquetados (los que te dijeron que NO envíes)
+*.log
 *.jar
 *.war
 *.ear
+*.zip
+*.tar.gz
+*.rar
 
-# Ignorar carpetas de configuración de IDEs (IntelliJ, NetBeans, VS Code)
+# --- Directorios de Salida (Build) ---
+# Esto ignora las carpetas 'target' de Maven y 'build' de Gradle
+target/
+bin/
+build/
+out/
+
+# --- Maven ---
+.mtj.tmp/
+*.ckpt
+.incremental/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.used
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# --- Gradle ---
+.gradle
+/build/
+!gradle-wrapper.jar
+/log/
+
+# --- IDEs (IntelliJ, VS Code, Eclipse) ---
 .idea/
-nbproject/
-nb-configuration.xml
+*.iml
+*.iws
 .vscode/
+.settings/
+.classpath
+.project
+.metadata/
+
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
